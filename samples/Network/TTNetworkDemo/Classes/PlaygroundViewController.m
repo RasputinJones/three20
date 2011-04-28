@@ -111,7 +111,7 @@ static        NSString* kRequestURLPath  = @"http://farm3.static.flickr.com/2373
   // Also available are TTURLDataResponse and TTURLXMLResponse.
   request.response = [[[TTURLImageResponse alloc] init] autorelease];
 
-  [request send];
+  [request sendSynchronously];
 }
 
 
